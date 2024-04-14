@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Light;
+  src: url(SF-Pro-Text-Light.otf);
+}
+
+:root{
+  --color_1: #666666;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.loader .loader_ {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  position: relative;
+
+
+}
+
+.text_box {
+    padding-top: 40vw;
+    padding-left: 3vw;
+
+}
+
+
+.main_text{
+  overflow: hidden;
+}
+.text_box .main_text h1 {
+  font-size: 20vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: Light;
+  color:var(--color_1);
+
+}
+
+.number_text {
+  display: flex;
+  align-items: center;
+        gap: 4vw;
+
+}
+.number_text h1{
+    color:var(--color_1);
+    font-size: 15vw;
+      font-family: Light;
+
+
+}
+
+
+.number_text .loading_bar{
+  width: 54vw;
+  height: 1vw;
+  background: var(--color_1);
+  border-radius: 5px;
+}
+.number_text .loading_bar .loading_bar_{
+  width: 50%;
+  height: 100%;
+  background: #D2D2D2;
+    border-radius: 5px;
+
+}
