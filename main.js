@@ -17,8 +17,8 @@ function x__() {
   
   if (load.textContent=="100%") {
     t_x_.to(".loading_bar",{
-      rotate:90+"deg",
-      x:2.1+"vw"
+    //  rotate:90+"deg",
+   //   x:2.1+"vw"
     })
     t_x_.to(".loading_bar",{
      // height:1000+'vw',
@@ -31,5 +31,5 @@ function x__() {
 }
 requestAnimationFrame(x__);
 
-load.textContent="100%"
+load.textContent="74%"
 
