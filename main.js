@@ -75,9 +75,9 @@ var hello = ["hell","swagatham"]
 loding_bor.to(".loader_x",{
   //top:1000+"vh",
   duration:3,
-  rotate:180+'deg',
-  repeat:5,
-  yoyo: true,
+  rotate:360+'deg',
+  //repeat:5,
+ // yoyo: true,
    //stagger:1,
    ease: "power4.inOut",
 })

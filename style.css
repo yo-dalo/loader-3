@@ -114,6 +114,8 @@ with animation
  display: flex;
  align-items: center;
  justify-content: center;
+  transform-origin: right bottom;
+
 
 }
 .loader_x h3{
