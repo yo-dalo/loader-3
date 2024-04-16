@@ -30,6 +30,62 @@ function x__() {
   requestAnimationFrame(x__);
 }
 requestAnimationFrame(x__);
+var i=0;
+  setInterval(()=>{
+load.textContent=i+"%"
+i++;
+},100);
 
-load.textContent="74%"
 
+let loding_bor = gsap.timeline();
+loding_bor.to(".loading_bar",{
+  delay:10,
+  rotate:90+"deg",
+  top:50+"%",
+  left:50+"%",
+    transform: "translate(-50%,-50%)",
+   ease: "power4",
+
+  
+})
+
+loding_bor.to(".loading_bar",{
+  width:100+"vh",
+    delay:1,
+       ease: "power4",
+
+
+})
+loding_bor.to(".loading_bar", {
+  height: 100 + "vw",
+    delay:0.2,
+   ease: "power4",
+
+})
+loding_bor.to(".loader",0.8, {
+  opacity: 0,
+  delay: 0.2,
+
+})
+
+
+
+////loader_x_________
+var hello = ["hell","swagatham"]
+loding_bor.to(".loader_x",{
+  //top:1000+"vh",
+  duration:3,
+  rotate:180+'deg',
+  repeat:5,
+  yoyo: true,
+   //stagger:1,
+   ease: "power4.inOut",
+})
+
+loding_bor.to(".loader_x",{
+  top:1000+"vh",
+  duration:3,
+  rotate:180+'deg',
+   //stagger:1,
+   ease: "power4.inOut",
+})

@@ -26,6 +26,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 888;
 
 }
 
@@ -77,11 +78,47 @@ html {
   height: 1vw;
   background: var(--color_1);
   border-radius: 5px;
+  overflow: hidden;
 }
 .number_text .loading_bar .loading_bar_{
   width: 50%;
   height: 100%;
   background: #D2D2D2;
     border-radius: 5px;
+
+}
+
+.page_1{
+  width: 100vw;
+  height: 100vh;
+  background: #676767;
+}
+
+/*
+with animation 
+*/
+
+.loading_bar {
+  position: absolute;
+  
+}
+
+
+
+.loader_x{
+ width: 100vw;
+ height: 100vh;
+ background: #FFB9B9;
+ position: fixed;
+ z-index: 33;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.loader_x h3{
+    font-family: Light;
+    text-transform: uppercase;
+    
 
 }
