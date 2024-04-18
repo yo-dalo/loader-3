@@ -1,3 +1,10 @@
+var loding_delay=100;
+
+
+
+
+
+
 let t_x= gsap.timeline()
 let t_x_= gsap.timeline()
 
@@ -10,36 +17,46 @@ t_x.from(".main_text h1",1.8,{
 })
 
 var load = document.getElementById("load");
-
 var loading_bar_ = document.querySelector(".loading_bar_");
-function x__() {
-  loading_bar_.style.width=load.textContent;
-  
-  if (load.textContent=="100%") {
-    t_x_.to(".loading_bar",{
-    //  rotate:90+"deg",
-   //   x:2.1+"vw"
-    })
-    t_x_.to(".loading_bar",{
-     // height:1000+'vw',
-    //  width:1000+"vh",
-    })
 
-    
+function x__() {
+  loading_bar_.style.width = load.textContent;
+  
+  if (load.textContent === "100%") {
+    // Stop the animation or perform any actions when loading reaches 100%
+    cancelAnimationFrame(x__);
+  } else {
+    requestAnimationFrame(x__);
   }
-  requestAnimationFrame(x__);
 }
+
 requestAnimationFrame(x__);
-var i=0;
-  setInterval(()=>{
-load.textContent=i+"%"
-i++;
-},100);
+
+var i = 0;
+var xyz = setInterval(() => {
+  load.textContent = i + "%";
+  i++;
+  if (i === 101) {
+    clearInterval(xyz); // Stop the interval when i reaches 100
+  }
+}, loding_delay);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let loding_bor = gsap.timeline();
 loding_bor.to(".loading_bar",{
-  delay:10,
+  delay:loding_delay/10,
   rotate:90+"deg",
   top:50+"%",
   left:50+"%",

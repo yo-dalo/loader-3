@@ -35,12 +35,14 @@ html {
   height: 100%;
   background: #000000;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 
 }
 
 .text_box {
-    padding-top: 30vh;
     padding-left: 3vw;
 
 }
@@ -74,7 +76,7 @@ html {
 
 
 .number_text .loading_bar{
-  width: 54vw;
+  width: 30vw;
   height: 1vw;
   background: var(--color_1);
   border-radius: 5px;
